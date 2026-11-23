@@ -1,25 +1,128 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    body {
-        background-color: aliceblue;
-    }
 
-    img {
-        height: 50px;
-        width: 50px;
-    }
-</style>
+    <title>My First Professional Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #e8eaf6);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 650px;
+            padding: 45px 30px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        h1 {
+            color: #172554;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #64748b;
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .whatsapp-img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-img:hover {
+            transform: scale(1.15) rotate(5deg);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 28px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 25px;
+            }
+
+            .container {
+                padding: 35px 20px;
+            }
+        }
+    </style>
+</head>
 
 <body>
-    <h1>this is the first heading in the index.html</h1>
-    <img src="whatsapp.webp">
-</body>
 
+    <div class="container">
+
+        <h1>Welcome to My Website!</h1>
+
+        <p>
+            This is my first professional HTML website.
+            I am learning HTML and CSS to create
+            beautiful and modern web designs.
+        </p>
+
+        <img src="whatsapp.webp"
+             alt="WhatsApp Logo"
+             class="whatsapp-img">
+
+        <br>
+
+        <a href="https://www.whatsapp.com/"
+           target="_blank"
+           class="btn">
+            Visit WhatsApp
+        </a>
+
+        <footer>
+            © 2026 My First Website | Designed with HTML & CSS
+        </footer>
+
+    </div>
+
+</body>
 </html>
